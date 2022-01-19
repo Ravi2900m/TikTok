@@ -1,0 +1,83 @@
+ 
+
+ { 
+
+   "name": "TikTok Bot", 
+
+   "description": "بوت تيليجرام لتحميل الفيديوهات او المقاطع الصوتية من التيكتوك.", 
+
+   "keywords": [ 
+
+     "telegram", 
+
+     "تيكتوك", 
+
+     "video", 
+
+     "tiktok" 
+
+   ], 
+
+   "success_url": "https://t.me/UU399", 
+
+   "website": "https://github.com/Ravi2900m", 
+
+   "repository": "https://github.com/Ravi2900m/TikTok/new/main", 
+
+   "env": { 
+
+     "BOT_TOKEN": { 
+
+       "description": "ضع هنا توكن البوت احصل عليه من هنا  https://t.me/botfather", 
+
+       "value": "" 
+
+     }, 
+
+     "APP_ID": { 
+
+       "description": "ضع هنا الايبب ايدي احصل عليه من هنا https://my.telegram.org", 
+
+       "value": "" 
+
+     }, 
+
+     "API_HASH": { 
+
+       "description": "ضع هنا الايبي هاش احصل عليه من هنا https://my.telegram.org", 
+
+       "value": "" 
+
+     } 
+
+   }, 
+
+   "addons": [ 
+
+   ], 
+
+   "buildpacks": [{ 
+
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" 
+
+   }, { 
+
+     "url": "heroku/python" 
+
+   }], 
+
+   "stack": "heroku-20", 
+
+   "formation": { 
+
+     "worker": { 
+
+       "quantity": 1, 
+
+       "size": "free" 
+
+     } 
+
+   } 
+
+ }
